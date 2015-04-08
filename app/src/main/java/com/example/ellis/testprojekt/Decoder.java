@@ -5,9 +5,4 @@ package com.example.ellis.testprojekt;
  */
 public class Decoder {
 
-    public Decoder() {
-
-
-
-    }
 }

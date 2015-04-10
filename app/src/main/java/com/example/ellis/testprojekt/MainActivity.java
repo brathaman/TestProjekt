@@ -23,7 +23,7 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        System.out.println("Enter number");
 
        final EditText e = (EditText) findViewById(R.id.editText);
        final String pass = e.getText().toString();
@@ -37,7 +37,7 @@ public class MainActivity extends Activity {
 
                 String out = Base64.encodeToString(d, Base64.DEFAULT);
 
-                TextView v1 =(TextView) findViewById(R.id.textView);
+               TextView v1 =(TextView) findViewById(R.id.textView);
                 v1.setText(out);
                 Log.e(null,out);
 
@@ -86,5 +86,7 @@ public class MainActivity extends Activity {
             System.out.println(stack.pop());
         }
     }
+
+
 
 }

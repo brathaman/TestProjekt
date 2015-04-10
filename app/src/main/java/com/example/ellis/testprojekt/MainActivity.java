@@ -70,9 +70,4 @@ public class MainActivity extends Activity {
         return mArray;
     }
 
-    void test() {
-
-        Log.e(null,"Hej");
-    }
-
 }

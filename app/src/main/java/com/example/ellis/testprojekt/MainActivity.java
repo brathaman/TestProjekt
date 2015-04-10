@@ -84,8 +84,11 @@ public class MainActivity extends Activity {
         }
         while(!stack.isEmpty()){
             System.out.println(stack.pop());
+            System.out.println("");
         }
     }
+
+
 
 
 

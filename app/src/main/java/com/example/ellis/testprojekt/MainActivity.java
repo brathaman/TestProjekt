@@ -13,6 +13,9 @@ import android.widget.TextView;
 
 import org.w3c.dom.Text;
 
+import java.util.Scanner;
+import java.util.Stack;
+
 
 public class MainActivity extends Activity {
 
@@ -68,6 +71,20 @@ public class MainActivity extends Activity {
         }
 
         return mArray;
+    }
+
+    public static void test(){
+        Stack stack = new Stack();
+        Scanner scanner =  new Scanner(System.in);
+        System.out.println("Enter number");
+        int n = scanner.nextInt();
+        while(n > 0){
+            stack.push(n % 2);
+            n = n / 2;
+        }
+        while(!stack.isEmpty()){
+            System.out.println(stack.pop());
+        }
     }
 
 }
